@@ -1,0 +1,7 @@
+CREATE TABLE sensor_data (
+    id IDENTITY PRIMARY KEY,
+    temperature FLOAT,
+    humidity FLOAT,
+    co2_level FLOAT,
+    reading_time TIMESTAMP
+);
