@@ -12,7 +12,7 @@ $tableExists = $db->query("SELECT EXISTS (SELECT 1 FROM information_schema.table
 
 if (!$tableExists) {
     $sql = "CREATE TABLE sensor_data (
-                id identity PRIMARY KEY,
+                id serial PRIMARY KEY,
                 temperature FLOAT NOT NULL,
                 humidity FLOAT NOT NULL,
                 co2_level FLOAT NOT NULL,

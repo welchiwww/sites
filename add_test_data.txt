@@ -1,0 +1,6 @@
+INSERT INTO public.sensor_data (temperature, humidity, co2_level, reading_time)
+SELECT
+    ROUND(RANDOM() * 30) + 10,  -- Генерация температуры от 10 до 40 градусов
+    ROUND(RANDOM() * 40) + 30,  -- Генерация влажности от 30 до 70%
+    ROUND(RANDOM() * 600) + 400,-- Генерация уровня CO2 от 400 до 1000 ppm
+    CURRENT_TIMESTAMP - INTERVAL '1 minute' * generate_series(0, 525599);

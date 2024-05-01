@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  php:
+    build: .
+    volumes:
+      - ./configs/php.ini:/usr/local/etc/php/php.ini
+      - ./configs/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./logs/error.log:/var/log/apache2/error.log
+      - ./logs/access.log:/var/log/apache2/access.log
+      - ./add_pages:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: sensors
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
