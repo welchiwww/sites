@@ -6,9 +6,10 @@ services:
     volumes:
       - ./configs/php.ini:/usr/local/etc/php/php.ini
       - ./configs/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./configs/apache2.conf:/etc/apache2/apache2.conf
       - ./logs/error.log:/var/log/apache2/error.log
       - ./logs/access.log:/var/log/apache2/access.log
-      - ./data:/var/www/html
+      - ./:/var/www/html
     ports:
       - "8080:80"
     depends_on:
@@ -24,6 +25,8 @@ services:
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
+    volumes:
+      - ./configs/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - app-network
 

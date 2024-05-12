@@ -1,11 +1,15 @@
 <?php
-include __DIR__ . "/helpers.php";
-include __DIR__ . "/db.php";
+require_once __DIR__ . "/helpers.php";
+require_once __DIR__ . "/db.php";
 
-function draw_chart($labels, $values, $type) {
-    if ($type == "temperature") $title = "Температура";
-    elseif ($type == "humidity") $title = "Влажность";
-    else $title = "Уровень углекислого газа";
+function draw_chart($labels, $values, $type)
+{
+    if ($type == "temperature")
+        $title = "Температура";
+    elseif ($type == "humidity")
+        $title = "Влажность";
+    else
+        $title = "Уровень углекислого газа";
     echo '<div id = "chartContainer" style = "width: 100%; height: 50%;">';
     echo '<canvas id="myChart" width="200" height="200"></canvas>';
     echo '<script>';
@@ -40,7 +44,8 @@ function draw_chart($labels, $values, $type) {
 }
 
 
-function create_graph($period, $type, $db){
+function create_graph($period, $type, $db)
+{
     $sql = choose_query($period, $type);
     $data = fetch_data_from_database($sql, $db);
     $labels = transform_labels_for_chart($data);

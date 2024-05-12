@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-    .input_form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        body {
+            background-color: #dedede;
+        }
+
+        .input_form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 2px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
     </style>
     <title>Графики температуры</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-<div class = "input_form">
-<p>Период отображения:</p>
-<form action="./temp_data.php" method="post">
-    <input type="submit" name="hour_temperature" value="Час">
-    <input type="submit" name="day_temperature" value="День">
-    <input type="submit" name="month_temperature" value="Месяц">
-</form>
-<form action="../index.php" method="post">
-    <input type="submit" name="back" value="Вернуться на главную">
-</form>
-</div>
-<?php
-include("../src/draw.php");
+    <div>
+        <p>Период отображения:</p>
+        <form action="./temp_data.php" method="post" class="input_form">
+            <input type="submit" name="hour_temperature" value="Час">
+            <input type="submit" name="day_temperature" value="День">
+            <input type="submit" name="month_temperature" value="Месяц">
+        </form>
+        <form action="main.php" method="post" class="input_form">
+            <input type="submit" name="back" value="Вернуться на главную">
+        </form>
+    </div>
+    <?php
+    include ("../src/draw.php");
 
-$db = connect_to_database();
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['hour_temperature'])) {
-        create_graph('hour', 'temperature', $db);
+    $db = connect_to_database();
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_POST['hour_temperature'])) {
+            create_graph('hour', 'temperature', $db);
+        } elseif (isset($_POST['day_temperature'])) {
+            create_graph('day', 'temperature', $db);
+        } elseif (isset($_POST['month_temperature'])) {
+            create_graph('month', 'temperature', $db);
+        }
     }
-    elseif (isset($_POST['day_temperature'])) {
-        create_graph('day', 'temperature', $db);
-    }
-    elseif (isset($_POST['month_temperature'])) {
-        create_graph('month', 'temperature', $db);
-    }
-}
 
-?>
+    ?>
 
 
 </body>

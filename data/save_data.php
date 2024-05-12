@@ -1,13 +1,14 @@
 <?php
 
-include("../src/db.php");
+include ("../src/db.php");
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $db = connect_to_database();
 $tableExists = $db->query("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'sensor_data')")->fetchColumn();
 
 if (!$tableExists) {
     $sql = "CREATE TABLE sensor_data (
-                id identity PRIMARY KEY,
+                id serial PRIMARY KEY,
                 temperature FLOAT NOT NULL,
                 humidity FLOAT NOT NULL,
                 co2_level FLOAT NOT NULL,
@@ -25,12 +26,12 @@ $co2_level = $_POST['co2'];
 
 $sql = "INSERT INTO sensor_data (temperature, humidity, co2_level) VALUES (?, ?, ?)";
 $stmt = $db->prepare($sql);
-try{
+try {
     $stmt->execute([$temperature, $humidity, $co2_level]);
-}
-catch(PDOException $e) {
+} catch (PDOException $e) {
     die($e->getMessage());
 }
 
 echo "Данные добавлены успешно!";
-
+}
+else header("Location: main.php");

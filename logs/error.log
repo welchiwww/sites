@@ -1704,6 +1704,468 @@ Apache server interrupted...
 [Sun May 12 20:05:25.730667 2024] [mpm_winnt:notice] [pid 11400:tid 452] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
 [Sun May 12 20:05:25.730667 2024] [core:notice] [pid 11400:tid 452] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
 [Sun May 12 20:05:25.735663 2024] [mpm_winnt:notice] [pid 11400:tid 452] AH00418: Parent: Created child process 10124
-[Sun May 12 20:05:26.862556 2024] [mpm_winnt:notice] [pid 10124:tid 456] AH00354: Child: Starting 64 worker threads.
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 10124:tid 456] AH00354: Child: Starting 64 worker threads.
 [Sun May 12 20:05:29.669955 2024] [php:error] [pid 10124:tid 1156] [client ::1:62805] PHP Fatal error:  Cannot redeclare connect_to_database() (previously declared in D:\\sites\\src\\db.php:8) in D:\\sites\\src\\db.php on line 12, referer: http://localhost/index.php
 [Sun May 12 20:07:00.135089 2024] [php:error] [pid 10124:tid 1156] [client ::1:62820] PHP Fatal error:  Cannot redeclare connect_to_database() (previously declared in D:\\sites\\src\\db.php:8) in D:\\sites\\src\\db.php on line 12, referer: http://localhost/index.php
+[Sun May 12 20:15:40.119482 2024] [mpm_winnt:notice] [pid 11400:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 20:15:42.143472 2024] [mpm_winnt:notice] [pid 10124:tid 456] AH00364: Child: All worker threads have exited.
+[Sun May 12 20:15:42.169374 2024] [mpm_winnt:notice] [pid 11400:tid 452] AH00430: Parent: Child process 10124 exited successfully.
+[Sun May 12 21:03:24.618444 2024] [mpm_winnt:notice] [pid 11876:tid 428] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:03:24.618444 2024] [mpm_winnt:notice] [pid 11876:tid 428] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:03:24.618444 2024] [core:notice] [pid 11876:tid 428] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:03:24.623583 2024] [mpm_winnt:notice] [pid 11876:tid 428] AH00418: Parent: Created child process 13400
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 13400:tid 452] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:07:44.774614 2024] [php:error] [pid 13400:tid 1120] [client ::1:63743] script 'D:/sites/reg.php' not found or unable to stat, referer: http://localhost/register.php
+[Sun May 12 21:08:12.982164 2024] [php:error] [pid 13400:tid 1120] [client ::1:63745] script 'D:/sites/reg.php' not found or unable to stat, referer: http://localhost/register.php
+[Sun May 12 21:08:20.575045 2024] [mpm_winnt:notice] [pid 11876:tid 428] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:08:26.086750 2024] [mpm_winnt:notice] [pid 13400:tid 452] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:08:26.172562 2024] [mpm_winnt:notice] [pid 11876:tid 428] AH00430: Parent: Child process 13400 exited successfully.
+[Sun May 12 21:08:58.270151 2024] [mpm_winnt:notice] [pid 10032:tid 444] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:08:58.270151 2024] [mpm_winnt:notice] [pid 10032:tid 444] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:08:58.270151 2024] [core:notice] [pid 10032:tid 444] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:08:58.275153 2024] [mpm_winnt:notice] [pid 10032:tid 444] AH00418: Parent: Created child process 8468
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 8468:tid 448] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:09:11.327514 2024] [php:warn] [pid 8468:tid 1124] [client ::1:63752] PHP Warning:  include(/src/db.php): Failed to open stream: No such file or directory in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:09:11.327740 2024] [php:warn] [pid 8468:tid 1124] [client ::1:63752] PHP Warning:  include(): Failed opening '/src/db.php' for inclusion (include_path='.;C:\\php\\pear') in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:09:11.335190 2024] [php:error] [pid 8468:tid 1124] [client ::1:63752] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in D:\\sites\\src\\reg.php:3\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\reg.php on line 3, referer: http://localhost/register.php
+[Sun May 12 21:09:44.303395 2024] [php:warn] [pid 8468:tid 1124] [client ::1:63756] PHP Warning:  include(./src/db.php): Failed to open stream: No such file or directory in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:09:44.303395 2024] [php:warn] [pid 8468:tid 1124] [client ::1:63756] PHP Warning:  include(): Failed opening './src/db.php' for inclusion (include_path='.;C:\\php\\pear') in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:09:44.303395 2024] [php:error] [pid 8468:tid 1124] [client ::1:63756] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in D:\\sites\\src\\reg.php:3\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\reg.php on line 3, referer: http://localhost/register.php
+[Sun May 12 21:09:51.615201 2024] [mpm_winnt:notice] [pid 10032:tid 444] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:09:53.642663 2024] [mpm_winnt:notice] [pid 8468:tid 448] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:09:53.685783 2024] [mpm_winnt:notice] [pid 10032:tid 444] AH00430: Parent: Child process 8468 exited successfully.
+[Sun May 12 21:09:56.657510 2024] [mpm_winnt:notice] [pid 7564:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:09:56.657510 2024] [mpm_winnt:notice] [pid 7564:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:09:56.657510 2024] [core:notice] [pid 7564:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:09:56.662501 2024] [mpm_winnt:notice] [pid 7564:tid 424] AH00418: Parent: Created child process 6208
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 6208:tid 440] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:10:06.876888 2024] [php:warn] [pid 6208:tid 1136] [client ::1:63759] PHP Warning:  include(./src/db.php): Failed to open stream: No such file or directory in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:10:06.876888 2024] [php:warn] [pid 6208:tid 1136] [client ::1:63759] PHP Warning:  include(): Failed opening './src/db.php' for inclusion (include_path='.;C:\\php\\pear') in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:10:06.876888 2024] [php:error] [pid 6208:tid 1136] [client ::1:63759] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in D:\\sites\\src\\reg.php:3\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\reg.php on line 3, referer: http://localhost/register.php
+[Sun May 12 21:11:06.516784 2024] [mpm_winnt:notice] [pid 7564:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:11:08.560626 2024] [mpm_winnt:notice] [pid 6208:tid 440] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:11:08.600632 2024] [mpm_winnt:notice] [pid 7564:tid 424] AH00430: Parent: Child process 6208 exited successfully.
+[Sun May 12 21:11:31.218328 2024] [mpm_winnt:notice] [pid 12052:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:11:31.219324 2024] [mpm_winnt:notice] [pid 12052:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:11:31.219324 2024] [core:notice] [pid 12052:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:11:31.227338 2024] [mpm_winnt:notice] [pid 12052:tid 424] AH00418: Parent: Created child process 904
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 904:tid 428] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:11:42.916148 2024] [php:warn] [pid 904:tid 1120] [client ::1:63779] PHP Warning:  include(D:\\sites\\src/src/db.php): Failed to open stream: No such file or directory in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:11:42.916148 2024] [php:warn] [pid 904:tid 1120] [client ::1:63779] PHP Warning:  include(): Failed opening 'D:\\sites\\src/src/db.php' for inclusion (include_path='.;C:\\php\\pear') in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:11:42.916148 2024] [php:error] [pid 904:tid 1120] [client ::1:63779] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in D:\\sites\\src\\reg.php:4\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\reg.php on line 4, referer: http://localhost/register.php
+[Sun May 12 21:12:06.029201 2024] [php:warn] [pid 904:tid 1120] [client ::1:63783] PHP Warning:  include(D:\\sites\\srcdb.php): Failed to open stream: No such file or directory in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:12:06.029201 2024] [php:warn] [pid 904:tid 1120] [client ::1:63783] PHP Warning:  include(): Failed opening 'D:\\sites\\srcdb.php' for inclusion (include_path='.;C:\\php\\pear') in D:\\sites\\src\\reg.php on line 2, referer: http://localhost/register.php
+[Sun May 12 21:12:06.029201 2024] [php:error] [pid 904:tid 1120] [client ::1:63783] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in D:\\sites\\src\\reg.php:4\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\reg.php on line 4, referer: http://localhost/register.php
+[Sun May 12 21:12:16.031978 2024] [php:error] [pid 904:tid 1120] [client ::1:63784] script 'D:/sites/src/login.php' not found or unable to stat, referer: http://localhost/register.php
+[Sun May 12 21:13:06.203736 2024] [php:error] [pid 904:tid 1120] [client ::1:63870] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23505]: Unique violation: 7 \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd0\xbf\xd0\xbe\xd0\xb2\xd1\x82\xd0\xbe\xd1\x80\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb5\xd0\xb5\xd1\x81\xd1\x8f \xd0\xb7\xd0\xbd\xd0\xb0\xd1\x87\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5 \xd0\xba\xd0\xbb\xd1\x8e\xd1\x87\xd0\xb0 \xd0\xbd\xd0\xb0\xd1\x80\xd1\x83\xd1\x88\xd0\xb0\xd0\xb5\xd1\x82 \xd0\xbe\xd0\xb3\xd1\x80\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x87\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5 \xd1\x83\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8 "users_username_key"\nDETAIL:  \xd0\x9a\xd0\xbb\xd1\x8e\xd1\x87 "(username)=(admin)" \xd1\x83\xd0\xb6\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82. in D:\\sites\\src\\reg.php:12\nStack trace:\n#0 D:\\sites\\src\\reg.php(12): PDOStatement->execute(Array)\n#1 {main}\n  thrown in D:\\sites\\src\\reg.php on line 12, referer: http://localhost/register.php
+[Sun May 12 21:13:40.538631 2024] [php:error] [pid 904:tid 1120] [client ::1:63874] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23505]: Unique violation: 7 \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd0\xbf\xd0\xbe\xd0\xb2\xd1\x82\xd0\xbe\xd1\x80\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb5\xd0\xb5\xd1\x81\xd1\x8f \xd0\xb7\xd0\xbd\xd0\xb0\xd1\x87\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5 \xd0\xba\xd0\xbb\xd1\x8e\xd1\x87\xd0\xb0 \xd0\xbd\xd0\xb0\xd1\x80\xd1\x83\xd1\x88\xd0\xb0\xd0\xb5\xd1\x82 \xd0\xbe\xd0\xb3\xd1\x80\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x87\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5 \xd1\x83\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8 "users_username_key"\nDETAIL:  \xd0\x9a\xd0\xbb\xd1\x8e\xd1\x87 "(username)=(admin)" \xd1\x83\xd0\xb6\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82. in D:\\sites\\src\\reg.php:12\nStack trace:\n#0 D:\\sites\\src\\reg.php(12): PDOStatement->execute(Array)\n#1 {main}\n  thrown in D:\\sites\\src\\reg.php on line 12, referer: http://localhost/register.php
+[Sun May 12 21:14:09.585790 2024] [php:error] [pid 904:tid 1120] [client ::1:63889] script 'D:/sites/auth.php' not found or unable to stat, referer: http://localhost/login.php
+[Sun May 12 21:19:14.129259 2024] [mpm_winnt:notice] [pid 12052:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 21:19:16.150265 2024] [mpm_winnt:notice] [pid 904:tid 428] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:19:16.175164 2024] [mpm_winnt:notice] [pid 12052:tid 424] AH00430: Parent: Child process 904 exited successfully.
+[Sun May 12 21:24:31.234263 2024] [mpm_winnt:notice] [pid 14124:tid 456] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:24:31.235480 2024] [mpm_winnt:notice] [pid 14124:tid 456] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:24:31.235480 2024] [core:notice] [pid 14124:tid 456] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:24:31.240273 2024] [mpm_winnt:notice] [pid 14124:tid 456] AH00418: Parent: Created child process 948
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 948:tid 432] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:24:33.069961 2024] [php:error] [pid 948:tid 1140] [client ::1:63970] script 'D:/sites/auth.php' not found or unable to stat, referer: http://localhost/login.php
+[Sun May 12 21:24:36.865995 2024] [php:error] [pid 948:tid 1140] [client ::1:63970] script 'D:/sites/auth.php' not found or unable to stat, referer: http://localhost/login.php
+[Sun May 12 21:25:13.442958 2024] [php:error] [pid 948:tid 1140] [client ::1:63976] script 'D:/sites/auth.php' not found or unable to stat, referer: http://localhost/login.php
+[Sun May 12 21:25:17.545726 2024] [mpm_winnt:notice] [pid 14124:tid 456] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:25:20.555972 2024] [mpm_winnt:notice] [pid 948:tid 432] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:25:20.582439 2024] [mpm_winnt:notice] [pid 14124:tid 456] AH00430: Parent: Child process 948 exited successfully.
+[Sun May 12 21:25:26.093851 2024] [mpm_winnt:notice] [pid 2472:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:25:26.093851 2024] [mpm_winnt:notice] [pid 2472:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:25:26.093851 2024] [core:notice] [pid 2472:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:25:26.098844 2024] [mpm_winnt:notice] [pid 2472:tid 424] AH00418: Parent: Created child process 13412
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 13412:tid 440] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:25:38.538672 2024] [php:warn] [pid 13412:tid 1124] [client ::1:63989] PHP Warning:  Undefined array key "login" in D:\\sites\\src\\auth.php on line 6, referer: http://localhost/login.php
+[Sun May 12 21:25:38.538672 2024] [php:warn] [pid 13412:tid 1124] [client ::1:63989] PHP Warning:  Undefined variable $pdo in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:25:38.538672 2024] [php:error] [pid 13412:tid 1124] [client ::1:63989] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in D:\\sites\\src\\auth.php:9\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:18.532894 2024] [php:warn] [pid 13412:tid 1124] [client ::1:64000] PHP Warning:  Undefined array key "login" in D:\\sites\\src\\auth.php on line 6, referer: http://localhost/login.php
+[Sun May 12 21:26:18.532894 2024] [php:warn] [pid 13412:tid 1124] [client ::1:64000] PHP Warning:  Undefined variable $pdo in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:18.532894 2024] [php:error] [pid 13412:tid 1124] [client ::1:64000] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in D:\\sites\\src\\auth.php:9\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:24.105614 2024] [mpm_winnt:notice] [pid 2472:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:26:26.114524 2024] [mpm_winnt:notice] [pid 13412:tid 440] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:26:26.138464 2024] [mpm_winnt:notice] [pid 2472:tid 424] AH00430: Parent: Child process 13412 exited successfully.
+[Sun May 12 21:26:33.175422 2024] [mpm_winnt:notice] [pid 11144:tid 436] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:26:33.175422 2024] [mpm_winnt:notice] [pid 11144:tid 436] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:26:33.175422 2024] [core:notice] [pid 11144:tid 436] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:26:33.180365 2024] [mpm_winnt:notice] [pid 11144:tid 436] AH00418: Parent: Created child process 3004
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 3004:tid 448] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:26:35.662881 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64009] PHP Warning:  Undefined array key "login" in D:\\sites\\src\\auth.php on line 6, referer: http://localhost/login.php
+[Sun May 12 21:26:35.662881 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64009] PHP Warning:  Undefined variable $pdo in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:35.662881 2024] [php:error] [pid 3004:tid 1124] [client ::1:64009] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in D:\\sites\\src\\auth.php:9\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:55.082369 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64022] PHP Warning:  Undefined variable $pdo in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:26:55.082369 2024] [php:error] [pid 3004:tid 1124] [client ::1:64022] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in D:\\sites\\src\\auth.php:9\nStack trace:\n#0 {main}\n  thrown in D:\\sites\\src\\auth.php on line 9, referer: http://localhost/login.php
+[Sun May 12 21:27:25.832906 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64036] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:27:25.832906 2024] [php:notice] [pid 3004:tid 1124] [client ::1:64036] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:29:47.645649 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64064] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:29:47.645649 2024] [php:notice] [pid 3004:tid 1124] [client ::1:64064] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:30:18.609202 2024] [php:warn] [pid 3004:tid 1124] [client ::1:64073] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:30:18.609202 2024] [php:notice] [pid 3004:tid 1124] [client ::1:64073] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:30:22.451302 2024] [mpm_winnt:notice] [pid 11144:tid 436] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:30:25.687627 2024] [mpm_winnt:notice] [pid 3004:tid 448] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:30:25.711179 2024] [mpm_winnt:notice] [pid 11144:tid 436] AH00430: Parent: Child process 3004 exited successfully.
+[Sun May 12 21:30:56.912840 2024] [mpm_winnt:notice] [pid 5496:tid 448] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:30:56.912840 2024] [mpm_winnt:notice] [pid 5496:tid 448] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:30:56.912840 2024] [core:notice] [pid 5496:tid 448] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:30:56.916834 2024] [mpm_winnt:notice] [pid 5496:tid 448] AH00418: Parent: Created child process 14860
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 14860:tid 456] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:31:08.831445 2024] [php:warn] [pid 14860:tid 1124] [client ::1:64087] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:31:08.831445 2024] [php:notice] [pid 14860:tid 1124] [client ::1:64087] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:31:29.722444 2024] [php:warn] [pid 14860:tid 1124] [client ::1:64101] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:31:29.722444 2024] [php:notice] [pid 14860:tid 1124] [client ::1:64101] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:31:46.062007 2024] [php:warn] [pid 14860:tid 1124] [client ::1:64109] PHP Warning:  Undefined array key "password" in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:31:46.062007 2024] [php:notice] [pid 14860:tid 1124] [client ::1:64109] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in D:\\sites\\src\\auth.php on line 13, referer: http://localhost/login.php
+[Sun May 12 21:34:59.521110 2024] [php:error] [pid 14860:tid 1124] [client ::1:64174] script 'D:/sites/src/login.php' not found or unable to stat, referer: http://localhost/login.php
+[Sun May 12 21:35:57.258217 2024] [mpm_winnt:notice] [pid 5496:tid 448] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:35:59.265663 2024] [mpm_winnt:notice] [pid 14860:tid 456] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:35:59.290538 2024] [mpm_winnt:notice] [pid 5496:tid 448] AH00430: Parent: Child process 14860 exited successfully.
+[Sun May 12 21:36:03.121056 2024] [mpm_winnt:notice] [pid 2652:tid 440] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:36:03.121056 2024] [mpm_winnt:notice] [pid 2652:tid 440] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:36:03.121056 2024] [core:notice] [pid 2652:tid 440] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:36:03.126054 2024] [mpm_winnt:notice] [pid 2652:tid 440] AH00418: Parent: Created child process 5440
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 5440:tid 436] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:44:14.691330 2024] [mpm_winnt:notice] [pid 2652:tid 440] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 21:44:16.709535 2024] [mpm_winnt:notice] [pid 5440:tid 436] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:44:16.751665 2024] [mpm_winnt:notice] [pid 2652:tid 440] AH00430: Parent: Child process 5440 exited successfully.
+[Sun May 12 21:44:18.820699 2024] [mpm_winnt:notice] [pid 6432:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:44:18.820699 2024] [mpm_winnt:notice] [pid 6432:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:44:18.821700 2024] [core:notice] [pid 6432:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:44:18.826946 2024] [mpm_winnt:notice] [pid 6432:tid 424] AH00418: Parent: Created child process 8084
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 8084:tid 428] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:44:36.153470 2024] [mpm_winnt:notice] [pid 6432:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 8084:tid 428] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:44:38.220837 2024] [mpm_winnt:notice] [pid 6432:tid 424] AH00430: Parent: Child process 8084 exited successfully.
+[Sun May 12 21:45:21.215933 2024] [mpm_winnt:notice] [pid 15204:tid 468] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:45:21.215933 2024] [mpm_winnt:notice] [pid 15204:tid 468] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:45:21.215933 2024] [core:notice] [pid 15204:tid 468] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:45:21.220937 2024] [mpm_winnt:notice] [pid 15204:tid 468] AH00418: Parent: Created child process 15772
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 15772:tid 428] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:45:27.054606 2024] [php:error] [pid 15772:tid 504] [client 127.0.0.1:64354] script 'D:/sites/index.php' not found or unable to stat, referer: http://localhost/
+[Sun May 12 21:45:46.884035 2024] [php:error] [pid 15772:tid 1132] [client 127.0.0.1:64353] script 'D:/sites/index.php' not found or unable to stat, referer: http://localhost/
+[Sun May 12 21:54:05.171034 2024] [mpm_winnt:notice] [pid 15204:tid 468] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 21:54:07.185167 2024] [mpm_winnt:notice] [pid 15772:tid 428] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:54:07.209128 2024] [mpm_winnt:notice] [pid 15204:tid 468] AH00430: Parent: Child process 15772 exited successfully.
+[Sun May 12 21:54:16.760694 2024] [mpm_winnt:notice] [pid 16068:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:54:16.760694 2024] [mpm_winnt:notice] [pid 16068:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:54:16.760694 2024] [core:notice] [pid 16068:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:54:16.765888 2024] [mpm_winnt:notice] [pid 16068:tid 424] AH00418: Parent: Created child process 3140
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 3140:tid 472] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:55:00.284760 2024] [mpm_winnt:notice] [pid 16068:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 21:55:02.298355 2024] [mpm_winnt:notice] [pid 3140:tid 472] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:55:02.348645 2024] [mpm_winnt:notice] [pid 16068:tid 424] AH00430: Parent: Child process 3140 exited successfully.
+[Sun May 12 21:55:46.472132 2024] [mpm_winnt:notice] [pid 10220:tid 432] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:55:46.473090 2024] [mpm_winnt:notice] [pid 10220:tid 432] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:55:46.473090 2024] [core:notice] [pid 10220:tid 432] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:55:46.478095 2024] [mpm_winnt:notice] [pid 10220:tid 432] AH00418: Parent: Created child process 15588
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 15588:tid 452] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:56:48.144253 2024] [mpm_winnt:notice] [pid 10220:tid 432] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 21:56:50.165685 2024] [mpm_winnt:notice] [pid 15588:tid 452] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:56:50.188035 2024] [mpm_winnt:notice] [pid 10220:tid 432] AH00430: Parent: Child process 15588 exited successfully.
+[Sun May 12 21:56:56.822397 2024] [mpm_winnt:notice] [pid 8784:tid 424] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 21:56:56.823396 2024] [mpm_winnt:notice] [pid 8784:tid 424] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 21:56:56.823428 2024] [core:notice] [pid 8784:tid 424] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 21:56:56.826518 2024] [mpm_winnt:notice] [pid 8784:tid 424] AH00418: Parent: Created child process 13972
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 13972:tid 444] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 21:58:40.840026 2024] [php:error] [pid 13972:tid 1120] [client ::1:64653] script 'D:/sites/index.php' not found or unable to stat
+[Sun May 12 21:59:40.392373 2024] [mpm_winnt:notice] [pid 8784:tid 424] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 21:59:43.278477 2024] [mpm_winnt:notice] [pid 13972:tid 444] AH00364: Child: All worker threads have exited.
+[Sun May 12 21:59:43.329322 2024] [mpm_winnt:notice] [pid 8784:tid 424] AH00430: Parent: Child process 13972 exited successfully.
+[Sun May 12 22:00:10.554545 2024] [mpm_winnt:notice] [pid 14876:tid 440] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 22:00:10.555536 2024] [mpm_winnt:notice] [pid 14876:tid 440] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 22:00:10.555536 2024] [core:notice] [pid 14876:tid 440] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 22:00:10.559536 2024] [mpm_winnt:notice] [pid 14876:tid 440] AH00418: Parent: Created child process 1272
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 1272:tid 436] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 22:02:24.324765 2024] [php:error] [pid 1272:tid 1132] [client ::1:64710] script 'D:/sites/index.php' not found or unable to stat
+[Sun May 12 22:24:23.449711 2024] [mpm_winnt:notice] [pid 14876:tid 440] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+Apache server interrupted...
+[Sun May 12 22:24:25.474810 2024] [mpm_winnt:notice] [pid 1272:tid 436] AH00364: Child: All worker threads have exited.
+[Sun May 12 22:24:25.501098 2024] [mpm_winnt:notice] [pid 14876:tid 440] AH00430: Parent: Child process 1272 exited successfully.
+[Sun May 12 22:25:32.523523 2024] [mpm_winnt:notice] [pid 10660:tid 156] AH00455: Apache/2.4.59 (Win64) PHP/8.3.6 configured -- resuming normal operations
+[Sun May 12 22:25:32.523523 2024] [mpm_winnt:notice] [pid 10660:tid 156] AH00456: Apache Lounge VS17 Server built: Apr  4 2024 15:03:17
+[Sun May 12 22:25:32.523523 2024] [core:notice] [pid 10660:tid 156] AH00094: Command line: 'D:\\Apache24\\bin\\httpd.exe -d D:/Apache24'
+[Sun May 12 22:25:32.527529 2024] [mpm_winnt:notice] [pid 10660:tid 156] AH00418: Parent: Created child process 14212
+Apache server interrupted...
+024] [mpm_winnt:notice] [pid 14212:tid 440] AH00354: Child: Starting 64 worker threads.
+[Sun May 12 22:29:40.010175 2024] [php:error] [pid 14212:tid 1124] [client ::1:49211] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42704]: Undefined object: 7 \xd0\x9e\xd0\xa8\xd0\x98\xd0\x91\xd0\x9a\xd0\x90:  \xd1\x82\xd0\xb8\xd0\xbf "identity" \xd0\xbd\xd0\xb5 \xd1\x81\xd1\x83\xd1\x89\xd0\xb5\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82\nLINE 2:                 id identity PRIMARY KEY,\n                           ^ in D:\\sites\\data\\save_data.php:16\nStack trace:\n#0 D:\\sites\\data\\save_data.php(16): PDO->exec('CREATE TABLE se...')\n#1 {main}\n  thrown in D:\\sites\\data\\save_data.php on line 16
+[Sun May 12 22:30:44.156810 2024] [php:warn] [pid 14212:tid 1116] [client ::1:49333] PHP Warning:  Undefined array key "temp" in D:\\sites\\data\\save_data.php on line 22
+[Sun May 12 22:30:44.156810 2024] [php:warn] [pid 14212:tid 1116] [client ::1:49333] PHP Warning:  Undefined array key "hum" in D:\\sites\\data\\save_data.php on line 23
+[Sun May 12 22:30:44.156810 2024] [php:warn] [pid 14212:tid 1116] [client ::1:49333] PHP Warning:  Undefined array key "co2" in D:\\sites\\data\\save_data.php on line 24
+[Sun May 12 22:33:49.158673 2024] [mpm_winnt:notice] [pid 10660:tid 156] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun May 12 22:33:51.171118 2024] [mpm_winnt:notice] [pid 14212:tid 440] AH00364: Child: All worker threads have exited.
+[Sun May 12 22:33:51.197058 2024] [mpm_winnt:notice] [pid 10660:tid 156] AH00430: Parent: Child process 14212 exited successfully.
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 19:34:20.253389 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 19:34:20.253989 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 19:34:25.972313 2024] [autoindex:error] [pid 17] [client 172.18.0.1:48690] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:34:33.568465 2024] [php7:error] [pid 18] [client 172.18.0.1:38522] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 19:35:07.286231 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 19:36:56.959821 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 19:36:56.960547 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 19:37:04.696191 2024] [autoindex:error] [pid 17] [client 172.19.0.1:59730] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:46:38.158374 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 19:46:55.892536 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 19:46:55.893242 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 19:47:43.937040 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 19:48:19.396668 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 19:48:19.397389 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 19:48:40.887000 2024] [autoindex:error] [pid 17] [client 172.21.0.1:51194] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:48:41.681467 2024] [autoindex:error] [pid 17] [client 172.21.0.1:51194] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:48:41.967793 2024] [autoindex:error] [pid 17] [client 172.21.0.1:51194] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:48:42.136151 2024] [autoindex:error] [pid 17] [client 172.21.0.1:51194] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 19:48:46.414211 2024] [php7:error] [pid 17] [client 172.21.0.1:51194] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 19:59:59.382416 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:00:09.865941 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:00:09.866556 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:00:16.106737 2024] [autoindex:error] [pid 17] [client 172.22.0.1:43906] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:00:28.458858 2024] [php7:error] [pid 18] [client 172.22.0.1:35244] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 20:02:18.170907 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:02:26.387580 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:02:26.388478 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:02:29.867610 2024] [php7:error] [pid 17] [client 172.23.0.1:48160] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 20:02:33.036959 2024] [autoindex:error] [pid 17] [client 172.23.0.1:48160] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:02:37.678926 2024] [php7:error] [pid 17] [client 172.23.0.1:48160] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 20:02:52.221435 2024] [php7:warn] [pid 18] [client 172.23.0.1:38262] PHP Warning:  include(../src/db.php): failed to open stream: No such file or directory in /var/www/html/save_data.php on line 3
+[Sun May 12 20:02:52.222379 2024] [php7:warn] [pid 18] [client 172.23.0.1:38262] PHP Warning:  include(): Failed opening '../src/db.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/save_data.php on line 3
+[Sun May 12 20:02:52.271441 2024] [php7:error] [pid 18] [client 172.23.0.1:38262] script '/var/www/html/login.php' not found or unable to stat
+[Sun May 12 20:03:21.532759 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:03:42.913400 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:03:42.914284 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:04:09.321508 2024] [php7:error] [pid 18] [client 172.24.0.1:38464] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /var/www/html/src/db.php on line 8, referer: http://localhost:8080/login.php
+[Sun May 12 20:04:51.502313 2024] [php7:error] [pid 19] [client 172.24.0.1:47970] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /var/www/html/src/db.php on line 8, referer: http://localhost:8080/login.php
+[Sun May 12 20:04:54.331640 2024] [php7:error] [pid 19] [client 172.24.0.1:47970] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /var/www/html/src/db.php on line 8, referer: http://localhost:8080/login.php
+[Sun May 12 20:05:45.158652 2024] [php7:error] [pid 20] [client 172.24.0.1:35786] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "users" does not exist\nLINE 1: SELECT * FROM users WHERE username = $1\n                      ^ in /var/www/html/src/auth.php:10\nStack trace:\n#0 /var/www/html/src/auth.php(10): PDOStatement->execute(Array)\n#1 {main}\n  thrown in /var/www/html/src/auth.php on line 10, referer: http://localhost:8080/login.php
+[Sun May 12 20:05:49.234648 2024] [php7:error] [pid 20] [client 172.24.0.1:35786] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "users" does not exist\nLINE 1: SELECT * FROM users WHERE username = $1\n                      ^ in /var/www/html/src/auth.php:10\nStack trace:\n#0 /var/www/html/src/auth.php(10): PDOStatement->execute(Array)\n#1 {main}\n  thrown in /var/www/html/src/auth.php on line 10, referer: http://localhost:8080/login.php
+[Sun May 12 20:12:34.288200 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:12:34.288496 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:12:34.288803 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:12:34.289097 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:12:34.289355 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:12:34.289607 2024] [php7:warn] [pid 21] [client 172.24.0.1:41358] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:13:37.647436 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:14:00.411483 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:14:00.412056 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:14:09.875604 2024] [autoindex:error] [pid 17] [client 172.25.0.1:53772] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:14:13.959728 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:14:13.960341 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:14:13.961165 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:14:13.961523 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:14:13.961861 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:14:13.962324 2024] [php7:warn] [pid 17] [client 172.25.0.1:53772] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:31.547318 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:31.547919 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:31.548378 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:31.548813 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:31.549261 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:31.549653 2024] [php7:warn] [pid 18] [client 172.25.0.1:52228] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:39.925409 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:39.925788 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:39.926091 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:39.926374 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:39.926803 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:39.927173 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:49.727151 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:49.727467 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:16:49.727739 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:49.727999 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:49.728283 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:16:49.728536 2024] [php7:warn] [pid 19] [client 172.25.0.1:36334] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:38.907940 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:19:38.908341 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:19:38.908658 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:38.908976 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:38.909343 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:38.909637 2024] [php7:warn] [pid 20] [client 172.25.0.1:59706] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:51.555542 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:19:51.556010 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:19:51.556486 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:51.556865 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:51.557338 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:19:51.557902 2024] [php7:warn] [pid 21] [client 172.25.0.1:44930] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:20:19.802844 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:21:02.357744 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:21:02.358819 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:21:03.356987 2024] [autoindex:error] [pid 17] [client 172.26.0.1:46850] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:21:04.300681 2024] [autoindex:error] [pid 17] [client 172.26.0.1:46850] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:21:05.685874 2024] [autoindex:error] [pid 17] [client 172.26.0.1:46850] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:21:09.096229 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  include(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:21:09.096592 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  include(): Failed opening '../configs/conf.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:21:09.096973 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  Use of undefined constant DB_HOST - assumed 'DB_HOST' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:21:09.097274 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  Use of undefined constant DB_NAME - assumed 'DB_NAME' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:21:09.097575 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  Use of undefined constant DB_USER - assumed 'DB_USER' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:21:09.097875 2024] [php7:warn] [pid 17] [client 172.26.0.1:46850] PHP Warning:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' (this will throw an Error in a future version of PHP) in /var/www/html/src/db.php on line 8
+[Sun May 12 20:21:46.275749 2024] [php7:warn] [pid 19] [client 172.26.0.1:53934] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:21:46.276319 2024] [php7:error] [pid 19] [client 172.26.0.1:53934] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:22:02.545085 2024] [php7:error] [pid 20] [client 172.26.0.1:32966] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "users" does not exist\nLINE 1: SELECT * FROM users WHERE username = $1\n                      ^ in /var/www/html/src/auth.php:10\nStack trace:\n#0 /var/www/html/src/auth.php(10): PDOStatement->execute(Array)\n#1 {main}\n  thrown in /var/www/html/src/auth.php on line 10, referer: http://localhost:8080/login.php
+[Sun May 12 20:22:06.514648 2024] [php7:warn] [pid 20] [client 172.26.0.1:32966] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:22:06.515214 2024] [php7:error] [pid 20] [client 172.26.0.1:32966] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:22:59.508200 2024] [php7:warn] [pid 21] [client 172.26.0.1:57526] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:22:59.508701 2024] [php7:error] [pid 21] [client 172.26.0.1:57526] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:23:28.527211 2024] [php7:warn] [pid 18] [client 172.26.0.1:60044] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:23:28.527613 2024] [php7:error] [pid 18] [client 172.26.0.1:60044] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:15.054268 2024] [php7:warn] [pid 19] [client 172.26.0.1:34644] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:15.054648 2024] [php7:error] [pid 19] [client 172.26.0.1:34644] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php:/var/www/html') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:15.659529 2024] [php7:warn] [pid 19] [client 172.26.0.1:34644] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:15.659831 2024] [php7:error] [pid 19] [client 172.26.0.1:34644] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php:/var/www/html') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.068349 2024] [php7:warn] [pid 19] [client 172.26.0.1:34644] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.068825 2024] [php7:error] [pid 19] [client 172.26.0.1:34644] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php:/var/www/html') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.220032 2024] [php7:warn] [pid 19] [client 172.26.0.1:34644] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.220358 2024] [php7:error] [pid 19] [client 172.26.0.1:34644] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php:/var/www/html') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.388553 2024] [php7:warn] [pid 19] [client 172.26.0.1:34644] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:24:16.388965 2024] [php7:error] [pid 19] [client 172.26.0.1:34644] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php:/var/www/html') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:28:31.743521 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.27.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:28:39.653067 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:28:39.653915 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:29:00.146026 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.28.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:29:46.484181 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:29:46.484823 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:29:56.663084 2024] [php7:warn] [pid 17] [client 172.28.0.1:45768] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:29:56.663500 2024] [php7:error] [pid 17] [client 172.28.0.1:45768] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:31:39.485038 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:31:59.199610 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:31:59.200332 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:32:10.479640 2024] [php7:warn] [pid 17] [client 172.29.0.1:51696] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:32:10.479892 2024] [php7:error] [pid 17] [client 172.29.0.1:51696] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:32:18.071782 2024] [php7:warn] [pid 17] [client 172.29.0.1:51696] PHP Warning:  require_once(/var/www/html/src\\db.php): failed to open stream: No such file or directory in /var/www/html/src/reg.php on line 2, referer: http://localhost:8080/register.php
+[Sun May 12 20:32:18.072033 2024] [php7:error] [pid 17] [client 172.29.0.1:51696] PHP Fatal error:  require_once(): Failed opening required '/var/www/html/src\\db.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/reg.php on line 2, referer: http://localhost:8080/register.php
+[Sun May 12 20:35:00.097804 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.30.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:35:23.895663 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:35:23.897126 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:36:09.400730 2024] [php7:warn] [pid 17] [client 172.30.0.1:38372] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:36:09.401171 2024] [php7:error] [pid 17] [client 172.30.0.1:38372] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:36:15.879584 2024] [php7:error] [pid 17] [client 172.30.0.1:38372] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "users" does not exist\nLINE 1: INSERT INTO users (username, password_hash) VALUES ($1, $2)\n                    ^ in /var/www/html/src/reg.php:12\nStack trace:\n#0 /var/www/html/src/reg.php(12): PDOStatement->execute(Array)\n#1 {main}\n  thrown in /var/www/html/src/reg.php on line 12, referer: http://localhost:8080/register.php
+[Sun May 12 20:39:15.289605 2024] [php7:warn] [pid 18] [client 172.30.0.1:58240] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/register.php
+[Sun May 12 20:39:15.290165 2024] [php7:error] [pid 18] [client 172.30.0.1:58240] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/register.php
+[Sun May 12 20:39:21.006601 2024] [php7:error] [pid 18] [client 172.30.0.1:58240] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "sensor_data" does not exist\nLINE 2:                     FROM sensor_data \n                                 ^ in /var/www/html/src/db.php:60\nStack trace:\n#0 /var/www/html/src/db.php(60): PDO->query('SELECT reading_...')\n#1 /var/www/html/src/draw.php(45): fetch_data_from_database('SELECT reading_...', Object(PDO))\n#2 /var/www/html/data/hum_data.php(56): create_graph('hour', 'humidity', Object(PDO))\n#3 {main}\n  thrown in /var/www/html/src/db.php on line 60, referer: http://localhost:8080/data/hum_data.php?
+[Sun May 12 20:39:25.027545 2024] [php7:error] [pid 18] [client 172.30.0.1:58240] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "public.sensor_data" does not exist\nLINE 5:                         public.sensor_data\n                                ^ in /var/www/html/src/db.php:60\nStack trace:\n#0 /var/www/html/src/db.php(60): PDO->query('SELECT\\r\\n       ...')\n#1 /var/www/html/src/draw.php(45): fetch_data_from_database('SELECT\\r\\n       ...', Object(PDO))\n#2 /var/www/html/data/co2_data.php(58): create_graph('day', 'co2_level', Object(PDO))\n#3 {main}\n  thrown in /var/www/html/src/db.php on line 60, referer: http://localhost:8080/data/co2_data.php?
+[Sun May 12 20:43:05.041772 2024] [autoindex:error] [pid 21] [client 172.30.0.1:51234] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:43:10.092898 2024] [php7:warn] [pid 22] [client 172.30.0.1:39670] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2
+[Sun May 12 20:43:10.093278 2024] [php7:error] [pid 22] [client 172.30.0.1:39670] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2
+[Sun May 12 20:43:11.867682 2024] [php7:warn] [pid 22] [client 172.30.0.1:39670] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:43:11.868136 2024] [php7:error] [pid 22] [client 172.30.0.1:39670] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:43:46.911768 2024] [php7:error] [pid 17] [client 172.30.0.1:55706] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in /var/www/html/login.php:99\nStack trace:\n#0 {main}\n  thrown in /var/www/html/login.php on line 99, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:05.767195 2024] [php7:warn] [pid 18] [client 172.30.0.1:47556] PHP Warning:  include(/src/db.php): failed to open stream: No such file or directory in /var/www/html/login.php on line 99, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:05.767660 2024] [php7:warn] [pid 18] [client 172.30.0.1:47556] PHP Warning:  include(): Failed opening '/src/db.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/login.php on line 99, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:05.767952 2024] [php7:error] [pid 18] [client 172.30.0.1:47556] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in /var/www/html/login.php:100\nStack trace:\n#0 {main}\n  thrown in /var/www/html/login.php on line 100, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:16.438800 2024] [php7:warn] [pid 19] [client 172.30.0.1:44200] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:16.439161 2024] [php7:error] [pid 19] [client 172.30.0.1:44200] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:52.522227 2024] [php7:warn] [pid 23] [client 172.30.0.1:57068] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:52.522588 2024] [php7:error] [pid 23] [client 172.30.0.1:57068] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:54.093339 2024] [php7:warn] [pid 23] [client 172.30.0.1:57068] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:54.093688 2024] [php7:error] [pid 23] [client 172.30.0.1:57068] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:54.263858 2024] [php7:warn] [pid 23] [client 172.30.0.1:57068] PHP Warning:  require_once(../configs/conf.php): failed to open stream: No such file or directory in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:44:54.264214 2024] [php7:error] [pid 23] [client 172.30.0.1:57068] PHP Fatal error:  require_once(): Failed opening required '../configs/conf.php' (include_path='.:/usr/local/lib/php') in /var/www/html/src/db.php on line 2, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:45:08.998619 2024] [php7:error] [pid 20] [client 172.30.0.1:46912] PHP Fatal error:  Uncaught Error: Call to undefined function connect_to_database() in /var/www/html/login.php:97\nStack trace:\n#0 {main}\n  thrown in /var/www/html/login.php on line 97, referer: http://localhost:8080/data/main.php
+[Sun May 12 20:48:07.638476 2024] [autoindex:error] [pid 20] [client 172.30.0.1:36746] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:55:04.113831 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.31.0.3. Set the 'ServerName' directive globally to suppress this message
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so (/usr/local/lib/php/extensions/no-debug-non-zts-20190902/pgsql.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'pdo_pgsql' already loaded in Unknown on line 0
+[Sun May 12 20:56:04.648869 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Sun May 12 20:56:04.649464 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun May 12 20:56:20.785105 2024] [autoindex:error] [pid 17] [client 172.31.0.1:52472] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:56:22.762235 2024] [autoindex:error] [pid 17] [client 172.31.0.1:52472] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:56:23.116276 2024] [autoindex:error] [pid 17] [client 172.31.0.1:52472] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:56:23.410097 2024] [autoindex:error] [pid 17] [client 172.31.0.1:52472] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun May 12 20:56:33.665619 2024] [php7:error] [pid 18] [client 172.31.0.1:54830] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "users" does not exist\nLINE 1: SELECT * FROM users WHERE username = $1\n                      ^ in /var/www/html/src/auth.php:10\nStack trace:\n#0 /var/www/html/src/auth.php(10): PDOStatement->execute(Array)\n#1 {main}\n  thrown in /var/www/html/src/auth.php on line 10, referer: http://localhost:8080/login.php
+[Sun May 12 20:57:00.350369 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully

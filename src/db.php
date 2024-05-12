@@ -1,11 +1,11 @@
 <?php
-include "../configs/conf.php";
+require_once "../configs/conf.php";
 
 //Для работы с БД, а так же для выбора запроса
 
 function connect_to_database() : PDO {
     try {
-        $db = new PDO(dsn : 'pgsql:host=' . DB_HOST .';dbname=' . DB_NAME, username: DB_USER, password: DB_PASSWORD);
+        $db = new PDO('pgsql:host=' . DB_HOST .';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $db;
     } catch (PDOException $e) {

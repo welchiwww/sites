@@ -1,13 +1,7 @@
-<?php
-session_start();
-?>
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Аутентификация</title>
+    <title>Регистрация</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,14 +11,12 @@ session_start();
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #dedede;
+            background-color: #f2f2f2;
         }
-
-        #auth {
+        
+        #greeting {
             margin-bottom: 20px;
-            font-family: cursive;
             font-size: 24px;
-            padding: 10px;
         }
 
         form {
@@ -61,37 +53,16 @@ session_start();
         button:hover {
             background-color: #0056b3;
         }
-
-        .error-message {
-            color: white;
-            background-color: #ff6666;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
     </style>
 </head>
-
 <body>
-    <div id="auth">Аутентификация</div>
-    <form action="/src/auth.php" method="post">
+    <h2>Регистрация нового пользователя</h2>
+    <form action="src/reg.php" method="post">
         <label for="username">Имя пользователя</label>
         <input type="text" name="username" id="username" placeholder="Введите имя пользователя">
-        <label for="password">Пароль</label>
+        <label for="password">Пароль</label> 
         <input type="password" name="password" id="password" placeholder="Введите пароль">
-        <button type="submit">Войти</button>
+        <button type="submit">Зарегистрироваться</button>
     </form>
-    <?php if (isset($_SESSION['error_message'])) { ?>
-        <div class="error-message"><?php echo $_SESSION['error_message']; ?></div>
-        <?php unset($_SESSION['error_message']); ?>
-    <?php } ?>
-
-    <?php
-    if (isset($_SESSION['user_id'])) {
-        header("Location: /data/main.php");
-    }
-    ?>
 </body>
-
 </html>

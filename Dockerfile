@@ -5,8 +5,6 @@ RUN apt-get update && \
 
 RUN docker-php-ext-install pdo_pgsql
 
-WORKDIR /var/www/html
 
-COPY . .
 
 EXPOSE 80
