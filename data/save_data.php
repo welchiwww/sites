@@ -1,27 +1,22 @@
 <?php
 
-include ("./functions.php");
-$host = 'postgres';
-$dbname = 'sensors';
-$username = 'postgres';
-$password = 'postgres';
+include("../src/db.php");
 
-$db = connect_to_database($host, $dbname, $username, $password);
-
+$db = connect_to_database();
 $tableExists = $db->query("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'sensor_data')")->fetchColumn();
 
 if (!$tableExists) {
     $sql = "CREATE TABLE sensor_data (
-                id serial PRIMARY KEY,
+                id identity PRIMARY KEY,
                 temperature FLOAT NOT NULL,
                 humidity FLOAT NOT NULL,
                 co2_level FLOAT NOT NULL,
                 reading_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )";
     $db->exec($sql);
-    echo "Таблица sensor_data создана успешно.\n";
+    echo "Таблица sensor_data создана успешно.";
 } else {
-    echo "Таблица sensor_data уже существует.\n";
+    echo "Таблица sensor_data уже существует.";
 }
 
 $temperature = $_POST['temp'];
@@ -34,7 +29,7 @@ try{
     $stmt->execute([$temperature, $humidity, $co2_level]);
 }
 catch(PDOException $e) {
-    echo "". $e->getMessage() ."";
+    die($e->getMessage());
 }
 
 echo "Данные добавлены успешно!";

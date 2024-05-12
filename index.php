@@ -14,13 +14,13 @@
 <body>
 
 <div class = "input_form">
-<form action="temp_data.php" method="get">
+<form action="data/temp_data.php" method="get">
     <button type="submit">Температура</button>
 </form>
-<form action="hum_data.php" method="get">
+<form action="data/hum_data.php" method="get">
     <button type="submit">Влажность</button>
 </form>
-<form action="co2_data.php" method="get">
+<form action="data/co2_data.php" method="get">
     <button type="submit">Уровень углекислого газа</button>
 </form>
 </div>

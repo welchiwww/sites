@@ -14,24 +14,20 @@
 <body>
 <div class = "input_form">
 <p>Период отображения:</p>
-<form action="co2_data.php" method="post">
+<form action="./co2_data.php" method="post">
     <input type="submit" name="hour_co2" value="Час">
     <input type="submit" name="day_co2" value="День">
     <input type="submit" name="month_co2" value="Месяц">
 </form>
-<form action="index.php" method="post">
+<form action="../index.php" method="post">
     <input type="submit" name="back" value="Вернуться на главную">
 </form>
 </div>
 
 <?php
-include("./functions.php");
-$host = 'postgres';
-$dbname = 'sensors';
-$username = 'postgres';
-$password = 'postgres';
+include("../src/draw.php");
 
-$db = connect_to_database($host, $dbname, $username, $password);
+$db = connect_to_database();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['hour_co2'])) {
         create_graph('hour', 'co2_level', $db);

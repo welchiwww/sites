@@ -8,7 +8,7 @@ services:
       - ./configs/httpd.conf:/usr/local/apache2/conf/httpd.conf
       - ./logs/error.log:/var/log/apache2/error.log
       - ./logs/access.log:/var/log/apache2/access.log
-      - ./add_pages:/var/www/html
+      - ./data:/var/www/html
     ports:
       - "8080:80"
     depends_on:
