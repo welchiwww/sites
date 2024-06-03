@@ -10,8 +10,13 @@ function draw_chart($labels, $values, $type)
         $title = "Влажность";
     else
         $title = "Уровень углекислого газа";
-    echo '<div id = "chartContainer" style = "width: 100%; height: 50%;">';
-    echo '<canvas id="myChart" width="200" height="200"></canvas>';
+
+    // Установка размеров канваса напрямую через атрибуты
+    $canvasWidth = 800; // Ширина канваса
+    $canvasHeight = 400; // Высота канваса
+
+    echo '<div id="chartContainer">';
+    echo "<canvas id=\"myChart\" width=\"$canvasWidth\" height=\"$canvasHeight\"></canvas>";
     echo '<script>';
     echo 'var ctx = document.getElementById("myChart").getContext("2d");';
     echo 'var myChart = new Chart(ctx, {';
@@ -26,6 +31,8 @@ function draw_chart($labels, $values, $type)
     echo '        }]';
     echo '    },';
     echo '    options: {';
+    echo '        responsive: true,';
+    echo '        maintainAspectRatio: false,';
     echo '        scales: {';
     echo '            xAxes: [{';
     echo '                type: "time",';
@@ -43,7 +50,6 @@ function draw_chart($labels, $values, $type)
     echo '</div>';
 }
 
-
 function create_graph($period, $type, $db)
 {
     $sql = choose_query($period, $type);
@@ -53,4 +59,4 @@ function create_graph($period, $type, $db)
 
     return draw_chart($labels, $values, $type);
 }
-
+?>

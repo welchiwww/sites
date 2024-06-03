@@ -7,7 +7,7 @@ session_start();
 <html>
 
 <head>
-    <title>Аутентификация</title>
+    <title>Авторизация</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,7 +74,7 @@ session_start();
 </head>
 
 <body>
-    <div id="auth">Аутентификация</div>
+    <div id="auth">Авторизация</div>
     <form action="/src/auth.php" method="post">
         <label for="username">Имя пользователя</label>
         <input type="text" name="username" id="username" placeholder="Введите имя пользователя">

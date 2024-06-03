@@ -1,6 +1,6 @@
 <?php
 
-function transform_labels_for_chart($data) {
+function transform_labels_for_chart(array $data) : array {
     $labels = [];
 
     foreach ($data as $row) {
@@ -10,7 +10,7 @@ function transform_labels_for_chart($data) {
     return $labels;
 }
 
-function transform_values_for_chart($data) {
+function transform_values_for_chart(array $data) : array {
     $values = [];
 
     foreach ($data as $row) {

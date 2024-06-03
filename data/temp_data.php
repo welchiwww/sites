@@ -5,6 +5,12 @@
     <style>
         body {
             background-color: #dedede;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         .input_form {
@@ -28,6 +34,17 @@
         p {
             text-align: center;
             font-size: 20px;
+        }
+
+        #chartContainer {
+            width: 90%;
+            height: 50vh;
+            position: relative;
+        }
+
+        #myChart {
+            width: 100% !important;
+            height: 100% !important;
         }
     </style>
     <title>Графики температуры</title>
@@ -59,8 +76,6 @@
             create_graph('month', 'temperature', $db);
         }
     }
-
     ?>
-
-
 </body>
+</html>

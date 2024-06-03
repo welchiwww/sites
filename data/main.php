@@ -50,14 +50,15 @@
         <form action="./co2_data.php" method="get" class="input_form">
             <button type="submit">Уровень углекислого газа</button>
         </form>
+        <form action="./users.php" method="post" class="input_form">
+            <button type="submit">Пользователи</button>
+        </form>
         <form action="./logout.php" method="post" class="input_form">
             <button type="submit">Выход</button>
         </form>
     </div>
 </body>
-
 </html>
-
 <?php
 session_start();
 if (!isset($_SESSION["user_id"])) {

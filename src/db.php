@@ -13,7 +13,7 @@ function connect_to_database() : PDO {
     }
 }
 
-function choose_query($period, $type){
+function choose_query(string $period, string $type) : string {
     switch ($period) {
         case 'hour':
             $sql = "SELECT reading_time as avg_date, $type as avg_value
@@ -56,7 +56,7 @@ function choose_query($period, $type){
     return $sql;
 }
 
-function fetch_data_from_database($sql, $db) {
+function fetch_data_from_database(string $sql, PDO $db) {
     $stmt = $db->query($sql);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
